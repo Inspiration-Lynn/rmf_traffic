@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5.0)
 
-project(rmf_traffic VERSION 2.0.0)
+project(rmf_traffic VERSION 3.0.0)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS on)
 
@@ -36,7 +36,7 @@ set(using_new_fcl true)
 set(FCL_LIBRARIES fcl)
 
 find_package(rmf_utils REQUIRED)
-find_package(Threads)
+find_package(Threads REQUIRED)
 
 find_package(eigen3_cmake_module QUIET)
 if (eigen3_cmake_module_FOUND)
