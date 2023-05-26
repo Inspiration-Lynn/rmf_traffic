@@ -850,6 +850,13 @@ public:
     /// before leaving this waypoint.
     const Dependencies& dependencies() const;
 
+    //获取level_name
+    const std::string level_name() const;
+
+    //设置level_name
+    void set_level_name(std::string level_name);
+
+
     class Implementation;
   private:
     Waypoint();

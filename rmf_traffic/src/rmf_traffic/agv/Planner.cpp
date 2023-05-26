@@ -1112,6 +1112,18 @@ const Dependencies& Plan::Waypoint::dependencies() const
   return _pimpl->dependencies;
 }
 
+// 地图名
+const std::string Plan::Waypoint::level_name() const
+{
+  return _pimpl->level_name;
+}
+
+// 地图名
+void Plan::Waypoint::set_level_name(std::string level_name)
+{
+  _pimpl->level_name = std::move(level_name);
+}
+
 //==============================================================================
 Plan::Waypoint::Waypoint()
 {

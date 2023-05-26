@@ -47,6 +47,8 @@ public:
 
   Dependencies dependencies = {};
 
+  std::string level_name = "";
+
   template<typename... Args>
   static Waypoint make(Args&& ... args)
   {
